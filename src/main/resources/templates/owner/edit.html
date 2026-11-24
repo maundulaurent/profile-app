@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Edit</title></head>
+<body>
+<h1>Edit Profile</h1>
+<div th:if="${error}" style="color:red" th:text="${error}">error</div>
+
+<form method="post" action="/owner/edit">
+    <!-- CSRF TOKEN - REQUIRED -->
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+    <label>Headline: <input type="text" name="headline" th:value="${profile.headline}"></label><br>
+    <label>Biography:<br>
+        <textarea name="biography" rows="5" th:text="${profile.biography}"></textarea>
+    </label><br>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label th:each="s : ${allSkills}">
+            <input type="checkbox" name="skillIds" th:value="${s}"
+                   th:checked="${profile.skillIds.contains(s)}">
+            <span th:text="${s}"></span>
+        </label>
+    </fieldset>
+
+    <label>Contact email: <input type="email" name="contactEmail" th:value="${profile.contactEmail}"></label><br>
+
+    <label>Availability:
+        <select name="availability">
+            <option th:each="a : ${availabilities}"
+                    th:value="${a.value}"
+                    th:text="${a.value}"
+                    th:selected="${profile.availability == a}"></option>
+        </select>
+    </label><br>
+
+    <button type="submit">Save</button>
+</form>
+<a href="/owner/dashboard">Back</a>
+</body>
+</html>

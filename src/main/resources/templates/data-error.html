@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Error</title>
+</head>
+<body>
+<h1>Data Service Unavailable</h1>
+<p th:text="${errorMessage}">Please retry.</p>
+<a href="/directory">Try again</a>
+</body>
+</html>

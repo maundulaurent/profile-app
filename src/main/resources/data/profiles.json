@@ -1,0 +1,121 @@
+[
+  {
+    "id": "p01",
+    "name": "Alex Morgan",
+    "headline": "Python developer",
+    "biography": "Builds accessible tools.",
+    "skill_ids": [
+      "python",
+      "sql"
+    ],
+    "published": true,
+    "contact_email": "p01@example.invalid"
+  },
+  {
+    "id": "p02",
+    "name": "Sam Rivera",
+    "headline": "UX researcher",
+    "biography": "Studies community needs.",
+    "skill_ids": [
+      "ux",
+      "testing"
+    ],
+    "published": true,
+    "contact_email": "p02@example.invalid"
+  },
+  {
+    "id": "p03",
+    "name": "Jordan Lee",
+    "headline": "JavaScript developer",
+    "biography": "Builds browser interfaces.",
+    "skill_ids": [
+      "javascript",
+      "ux"
+    ],
+    "published": true,
+    "contact_email": "p03@example.invalid"
+  },
+  {
+    "id": "p04",
+    "name": "Casey Chen",
+    "headline": "Data analyst",
+    "biography": "Works with public datasets.",
+    "skill_ids": [
+      "python",
+      "sql",
+      "testing"
+    ],
+    "published": true,
+    "contact_email": "p04@example.invalid"
+  },
+  {
+    "id": "p05",
+    "name": "Taylor Singh",
+    "headline": "Quality engineer",
+    "biography": "Tests web applications.",
+    "skill_ids": [
+      "testing",
+      "javascript"
+    ],
+    "published": true,
+    "contact_email": "p05@example.invalid"
+  },
+  {
+    "id": "p06",
+    "name": "Morgan Blake",
+    "headline": "Community designer",
+    "biography": "Designs inclusive services.",
+    "skill_ids": [
+      "ux"
+    ],
+    "published": true,
+    "contact_email": "p06@example.invalid"
+  },
+  {
+    "id": "p07",
+    "name": "Jamie Park",
+    "headline": "Python mentor",
+    "biography": "Helps new developers learn.",
+    "skill_ids": [
+      "python",
+      "testing"
+    ],
+    "published": true,
+    "contact_email": "p07@example.invalid"
+  },
+  {
+    "id": "p08",
+    "name": "Riley Stone",
+    "headline": "Database developer",
+    "biography": "Maintains reliable records.",
+    "skill_ids": [
+      "sql"
+    ],
+    "published": true,
+    "contact_email": "p08@example.invalid"
+  },
+  {
+    "id": "p09",
+    "name": "Private Avery",
+    "headline": "Python developer",
+    "biography": "PRIVATE SENTINEL AVERY",
+    "skill_ids": [
+      "python",
+      "sql"
+    ],
+    "published": false,
+    "contact_email": "p09@example.invalid"
+  },
+  {
+    "id": "p10",
+    "name": "Private Quinn",
+    "headline": "UX researcher",
+    "biography": "PRIVATE SENTINEL QUINN",
+    "skill_ids": [
+      "ux",
+      "testing"
+    ],
+    "published": false,
+    "contact_email": "p10@example.invalid"
+  }
+]

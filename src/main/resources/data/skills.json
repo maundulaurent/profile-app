@@ -1,0 +1,22 @@
+[
+  {
+    "id": "python",
+    "label": "Python"
+  },
+  {
+    "id": "javascript",
+    "label": "JavaScript"
+  },
+  {
+    "id": "sql",
+    "label": "SQL"
+  },
+  {
+    "id": "ux",
+    "label": "UX Design"
+  },
+  {
+    "id": "testing",
+    "label": "Testing"
+  }
+]

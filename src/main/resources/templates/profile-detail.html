@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Profile</title></head>
+<body>
+<h1 th:text="${profile.name}">Name</h1>
+<p th:text="${profile.headline}">Headline</p>
+<p th:text="${profile.biography}">Bio</p>
+<p>Availability: <span th:text="${profile.availability.value}">avail</span></p>
+<p>Contact: <span th:text="${profile.contactEmail}">email</span></p>
+<h2>Projects</h2>
+<ul>
+    <li th:each="proj : ${projects}">
+        <a th:href="@{/projects/{id}(id=${proj.id})}" th:text="${proj.title}">Title</a>
+    </li>
+</ul>
+<p><a href="/directory">Back to directory</a></p>
+</body>
+</html>

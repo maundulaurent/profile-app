@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Dashboard</title></head>
+<body>
+<h1>Owner Dashboard</h1>
+<p>Signed in as: <strong th:text="${#authentication.name}">user</strong></p>
+<p>Profile: <span th:text="${profile.id}"></span> - <span th:text="${profile.name}"></span></p>
+<p>Published: <span th:text="${profile.published}"></span></p>
+<p>Availability: <span th:text="${profile.availability.value}"></span></p>
+
+<a href="/owner/edit">Edit profile</a> |
+<a href="/owner/preview">Preview</a> |
+
+
+<form method="post" th:action="${profile.published} ? '/owner/unpublish' : '/owner/publish'" style="display:inline">
+    <button type="submit" th:text="${profile.published} ? 'Unpublish' : 'Publish'"></button>
+</form>
+
+
+<form method="post" th:action="@{/logout}" style="display:inline">
+    <button type="submit">Sign out</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Preview</title></head>
+<body>
+<h1>Private Preview (only you can see this)</h1>
+<p><em>Published: <span th:text="${profile.published}"></span></em></p>
+<h2 th:text="${profile.name}">Name</h2>
+<p th:text="${profile.headline}">Headline</p>
+<p th:text="${profile.biography}">Bio</p>
+<p>Availability: <span th:text="${profile.availability.value}"></span></p>
+<p>Contact: <span th:text="${profile.contactEmail}"></span></p>
+<a href="/owner/dashboard">Back</a>
+</body>
+</html>

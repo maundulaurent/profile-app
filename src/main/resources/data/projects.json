@@ -1,0 +1,114 @@
+[
+  {
+    "id": "j01",
+    "title": "Community Directory",
+    "description": "Discover community services.",
+    "evidence_links": [
+      "https://example.com/?project=j01"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p01",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p02",
+        "role": "Developer"
+      },
+      {
+        "profile_id": "p09",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "j02",
+    "title": "Accessible Events",
+    "description": "Find accessible local events.",
+    "evidence_links": [
+      "https://example.com/?project=j02"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p02",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p03",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "j03",
+    "title": "Open Data Explorer",
+    "description": "Browse public datasets.",
+    "evidence_links": [
+      "https://example.com/?project=j03"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p04",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p08",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "j04",
+    "title": "Website Test Kit",
+    "description": "Check essential website journeys.",
+    "evidence_links": [
+      "https://example.com/?project=j04"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p05",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p07",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "j05",
+    "title": "Neighbourhood Guide",
+    "description": "Explore inclusive activities.",
+    "evidence_links": [
+      "https://example.com/?project=j05"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p06",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p10",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "j06",
+    "title": "Learning Notes",
+    "description": "Organize programming examples.",
+    "evidence_links": [
+      "https://example.com/?project=j06"
+    ],
+    "contributors": [
+      {
+        "profile_id": "p01",
+        "role": "Coordinator"
+      },
+      {
+        "profile_id": "p07",
+        "role": "Developer"
+      }
+    ]
+  }
+]

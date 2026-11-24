@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form[action="/directory"]');
+            const results = document.getElementById('results');
+            if (form && results) {
+                form.addEventListener('submit', function () {
+                    results.innerHTML = '<p>Loading...</p>';
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+<h1>Profile Directory</h1>
+<form method="get" action="/directory">
+    <input type="text" name="q" th:value="${q}" placeholder="Search text">
+    <select name="skill">
+        <option value="">Any skill</option>
+        <option th:each="s : ${allSkills}" th:value="${s}" th:text="${s}"
+                th:selected="${s == skill}"></option>
+    </select>
+    <select name="availability">
+        <option value="any" th:selected="${availability == 'any'}">Any</option>
+        <option value="internship" th:selected="${availability == 'internship'}">Internship</option>
+        <option value="full-time" th:selected="${availability == 'full-time'}">Full-time</option>
+        <option value="contract" th:selected="${availability == 'contract'}">Contract</option>
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+<div id="results">
+    <div th:if="${#lists.isEmpty(profiles)}">
+        <p>No matches found.</p>
+    </div>
+    <ul>
+        <li th:each="p : ${profiles}">
+            <a th:href="@{/profiles/{id}(id=${p.id})}" th:text="${p.name}">Name</a>
+            — <span th:text="${p.headline}">headline</span>
+            — <span th:text="${p.availability.value}">availability</span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
